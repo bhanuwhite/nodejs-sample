@@ -38,7 +38,7 @@ exports.auth = function (req, res) {
         var clientId = credentials.web.client_id;
         // var redirectUrl = credentials.web.redirect_uris[0];
         var auth = new googleAuth();
-        var oauth2Client = new auth.OAuth2(clientId, clientSecret, 'https://app.mywoohoo.io/apiv2/gmail');
+        var oauth2Client = new auth.OAuth2(clientId, clientSecret, 'https://xxx/gmail');
         gmailAuthModel.find({}, function (err, token) {
             if (err)
                 return err;
